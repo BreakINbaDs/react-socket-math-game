@@ -1,0 +1,23 @@
+{
+  "name": "react-socket-math-game",
+  "version": "1.0.0",
+  "description": "realtime browser-based math game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BreakINbaDs/react-socket-math-game.git"
+  },
+  "author": "Raman Shapaval",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BreakINbaDs/react-socket-math-game/issues"
+  },
+  "homepage": "https://github.com/BreakINbaDs/react-socket-math-game#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.1.0"
+  }
+}
