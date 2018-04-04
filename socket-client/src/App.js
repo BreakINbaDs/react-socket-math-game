@@ -66,7 +66,7 @@ class App extends Component {
     this.refs.btn_false.style.display = 'none';
 
     if (answer == this.state.answer && this.state.nextRound == false) {
-      socket.emit('give answer', this.state.answer);
+      socket.emit('give answer');
       this.setState({score: this.state.score + 1, click: true}); 
 
     } else if (answer !== this.state.answer && this.state.score != 0) {

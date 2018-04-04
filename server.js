@@ -48,8 +48,8 @@ io.on('connection', socket => {
   console.log('New client connected')
   socket.emit('Initialization', rounds[rounds.length - 1]);
   
-  socket.on('give answer', (answer) => {
-    console.log('The right answer was given!', answer);
+  socket.on('give answer', () => {
+    console.log('The right answer was given!');
     round = round + 1;
     var data = questionGen(round);
 	io.sockets.emit('next round', data);
