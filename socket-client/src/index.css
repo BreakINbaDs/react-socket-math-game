@@ -1,5 +1,94 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  height: 100%;
+  background-image: url(./images/background.png);
+  position: relative;
+}
+
+#info-container {
+	position: absolute;
+	height: 150px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	top: 20px;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+
+}
+
+#timer {
+	font-size: 15px;
+	letter-spacing: 1px;
+	color: white;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	width: 200px;
+	height: 50px;
+}
+
+#timer h1 {
+	font-size: 15px;
+	color: white;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	width: 200px;
+	height: 50px;
+}
+
+#round {
+	width: 150px;
+	height: 50px;
+	font-size: 25px;
+	color: white;
+}
+
+#score {
+	width: 150px;
+	height: 50px;
+	font-size: 25px;
+	color: white;
+}
+
+#title {
+	position: absolute;
+	letter-spacing: 2px;
+	top: 200px;
+	text-align: center;
+	width: 100%;
+	font-size: 35px;
+	color: white;
+}
+
+#question-container {
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	position: absolute;
+	left: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	top: 300px;
+	font-size: 25px;
+	letter-spacing: 3px;
+	color: white;
+	width: 40%;
+	height: 300px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+#btns {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.btn {
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	background-color: rgba(71, 49, 152, 0.8); /* Green */
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
 }
