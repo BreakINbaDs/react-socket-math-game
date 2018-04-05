@@ -5,7 +5,7 @@ Real time browser-based math game.
 
 ## Getting Started
 
-Please follow next steps to successfully run the project. 
+Please follow next steps to successfully run the project.
 
 ### Prerequisites
 
@@ -27,12 +27,14 @@ To run math game you need to proceed through the next steps:
 
 The first step is to open terminal window and navigate to "./react-socket-math-game" and run server.
 ```
+npm install
 node server.js
 ```
 
 Then open one more terminal window and navigate to "./react-socket-math-game/socket-client" and run React App.
 
 ```
+npm install
 npm start
 ```
 
