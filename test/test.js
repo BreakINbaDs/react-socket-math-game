@@ -1,3 +1,4 @@
+
 var expect = require('chai').expect;
 var io     = require('socket.io-client');
 
@@ -46,5 +47,27 @@ describe('Sockets', function () {
     client2.disconnect();
     client3.disconnect();
     done();
+  });
+
+  it('New client should enter existing game at any time in any round:', function (done){
+    // Set up clients connections
+    client1 = io.connect(socketUrl, options);
+    client2 = io.connect(socketUrl, options);
+
+    // Lets imitate that game riched 3rd round
+    client1.emit('give answer');
+    client2.emit('give answer');
+
+    // Lets connect the third client
+    setTimeout(function () {
+      client3 = io.connect(socketUrl, options)
+      client3.on('Initialization', function(msg){
+        expect(msg.round).to.equal(3);
+        // Disconnect client
+        client3.disconnect();
+        client2.disconnect();
+        client1.disconnect();
+        done();
+    });}, 1000);
   });
 });
